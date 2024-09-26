@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/maps.js"></script>
+</head>
+<body>
+    <!-- Map -->
+    <div class="mapCanvas" id="mapCanvas"></div>
+
+    <!-- Contact form -->
+    <div class="container">
+            <div class="col-md-7 contacts">
+                <label for="message" class="col-sm-2 control-label">Message</label>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <textarea  class="form-control" cols="30" rows="5" placeholder="Enter your message..." type="body"></textarea>
+                        </div> <!--Phone settings-->
+                        </div> <!--End of text area-->
+                </form>
+            </div> <!--End of textarea grid-->
+
+            <div class="col-md-5 contacts">
+                <label for="name" class="col-sm-3 control-label">Name</label>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" placeholder="Enter your name...">
+                        </div>
+                    </div>
+                </form>
+                    <label for="email" class="col-sm-3 control-label">Email</label>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input type="email" class="form-control" placeholder="Enter email...">
+                        </div>
+                    </div>
+                </form>
+                <div class="form-group submit">
+                    <input type="submit" value="Send" action="mailto:#"/>
+                </div> <!--End submit-->
+            </div>  <!--End of fields-->
+    </div> <!--End of contacts-->
+</body>
+</html>
